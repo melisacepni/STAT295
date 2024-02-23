@@ -52,3 +52,11 @@ myarray
 
 now <- Sys.time()
 now
+
+install.packages(c("devtools","roxygen2","testthat","rmarkdown","pkgdown","purrr"))
+
+usethis::use_git_config(user.name = "melisacepni",
+                        user.email="melisa.cepni@metu.edu.tr")
+
+usethis::create_github_token()
+gitcreds::gitcreds_set()
